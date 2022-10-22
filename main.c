@@ -13,7 +13,7 @@ void selectionSort(int size, float *array)
             minInd = i;
             min = array[i];
             for(j = i; j < size; ++j) {
-                if (array[j] < min) {
+                if (array[j] > min) {
                     minInd = j;
                     min = array[j];
                 }
