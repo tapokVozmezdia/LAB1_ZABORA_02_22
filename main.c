@@ -44,7 +44,7 @@ int main()
         }
         selectionSort(numOfElements, array);
         for(int counter0 = 0; counter0 < numOfElements; counter0++){
-            printf("%.2f ", array[counter0]);
+            printf("%f ", array[counter0]);
         }
         free(array);
         return 0;
