@@ -2,7 +2,7 @@
 
 void selectionSort(int size, float *array)
 {
-        float min = pow(2,31) + 1;
+        float min;
         int minInd;
         float assist;
         int j;
