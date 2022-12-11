@@ -1,28 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <time.h>
-
-void selectionSort(int size, float *array)
-{
-        float min = pow(2,31) + 1;
-        int minInd;
-        float assist;
-        int j;
-        for(int i = 0; i < size; ++i) {
-            minInd = i;
-            min = array[i];
-            for(j = i; j < size; ++j) {
-                if (array[j] > min) {
-                    minInd = j;
-                    min = array[j];
-                }
-            }
-            assist = array[minInd];
-            array[minInd] = array[i];
-            array[i] = assist;
-        }
-}
 
 int main()
 {
@@ -43,9 +20,7 @@ int main()
             scanf("%f", &array[counter]);
         }
         selectionSort(numOfElements, array);
-        for(int counter0 = 0; counter0 < numOfElements; counter0++){
-            printf("%f ", array[counter0]);
-        }
+        printArray(numOfElements, array);
         free(array);
         return 0;
 }
