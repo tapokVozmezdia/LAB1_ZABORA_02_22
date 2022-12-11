@@ -1,4 +1,5 @@
 #include "funcs.h"
+#include <stdio.h>
 
 void selectionSort(int size, float *array)
 {
