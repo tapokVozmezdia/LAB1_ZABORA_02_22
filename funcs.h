@@ -3,4 +3,6 @@
 
 void selectionSort(int size, float *array);
 
+void printArray(int size, float *array);
+
 #endif
